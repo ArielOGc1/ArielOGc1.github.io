@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ariel Ortega - Data Scientist & Biomedical Engineer. Specialized in Python, SQL, Machine Learning and Data Analysis.">
+    <meta name="keywords" content="Data Science, Machine Learning, Python, SQL, Biomedical Engineering, Data Analyst">
+    <meta name="author" content="Ariel Ortega">
+    <title>Ariel Ortega | Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="lang-es" class="lang-btn active">ES</button>
+        <button id="lang-en" class="lang-btn">EN</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">AO</a>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link" data-es="Inicio" data-en="Home">Inicio</a></li>
+                <li><a href="#about" class="nav-link" data-es="Sobre Mí" data-en="About">Sobre Mí</a></li>
+                <li><a href="#skills" class="nav-link" data-es="Habilidades" data-en="Skills">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link" data-es="Contacto" data-en="Contact">Contacto</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <p class="hero-greeting" data-es="Hola, soy" data-en="Hi, I'm">Hola, soy</p>
+            <h1 class="hero-name">Ariel Ortega</h1>
+            <h2 class="hero-title">
+                <span class="typing-text" id="typing"></span>
+                <span class="cursor">|</span>
+            </h2>
+            <p class="hero-subtitle" data-es="Ingeniero Biomédico • Científico de Datos" data-en="Biomedical Engineer • Data Scientist">Ingeniero Biomédico • Científico de Datos</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary" data-es="Ver Proyectos" data-en="View Projects">Ver Proyectos</a>
+                <a href="#contact" class="btn btn-secondary" data-es="Contactar" data-en="Contact Me">Contactar</a>
+            </div>
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/ariel-ortega-guerron" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="https://github.com/ArielOGc1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:arielguerron@gmail.com" class="social-link" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-es="Sobre Mí" data-en="About Me">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span class="initials">AO</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-paragraph" data-es="Soy Ingeniero Biomédico en formación, próximo a culminar la carrera, con especialización en Ciencia de Datos y un enfoque analítico orientado a la aplicación de estadística, modelos predictivos y análisis de información para la mejora de procesos y la toma de decisiones en entornos técnicos, científicos y de negocio." data-en="I am a biomedical engineer in training, nearing the end of my degree, specializing in data science and with an analytical approach focused on the application of statistics, predictive models, and information analysis for process improvement and decision-making in technical, scientific, and business environments.">
+                        Soy Ingeniero Biomédico en formación, próximo a culminar la carrera, con especialización en Ciencia de Datos y un enfoque analítico orientado a la aplicación de estadística, modelos predictivos y análisis de información para la mejora de procesos y la toma de decisiones en entornos técnicos, científicos y de negocio.
+                    </p>
+                    <p class="about-paragraph" data-es="Mi formación en ingeniería biomédica me ha permitido desarrollar una comprensión profunda de sistemas complejos, variables críticas y procesos técnicos, competencias que complemento con el uso de Python, SQL, machine learning y herramientas de visualización de datos." data-en="My training in biomedical engineering has allowed me to develop a deep understanding of complex systems, critical variables, and technical processes, skills that I complement with the use of Python, SQL, machine learning, and data visualization tools.">
+                        Mi formación en ingeniería biomédica me ha permitido desarrollar una comprensión profunda de sistemas complejos, variables críticas y procesos técnicos, competencias que complemento con el uso de Python, SQL, machine learning y herramientas de visualización de datos.
+                    </p>
+                    <p class="about-paragraph" data-es="Busco oportunidades como Analista de Datos o Científico de Datos, así como posiciones donde la ciencia de datos aporte valor a proyectos biomédicos, tecnológicos o vinculados a la salud. Mi objetivo es integrarme a equipos que requieran rigor analítico, precisión técnica y capacidad para transformar datos en soluciones prácticas y medibles." data-en="I am seeking opportunities as a Data Analyst or Data Scientist, as well as positions where data science adds value to biomedical, technological, or health-related projects. My goal is to join teams that require analytical rigor, technical precision, and the ability to transform data into practical and measurable solutions.">
+                        Busco oportunidades como Analista de Datos o Científico de Datos, así como posiciones donde la ciencia de datos aporte valor a proyectos biomédicos, tecnológicos o vinculados a la salud. Mi objetivo es integrarme a equipos que requieran rigor analítico, precisión técnica y capacidad para transformar datos en soluciones prácticas y medibles.
+                    </p>
+                    <a href="CV.pdf" download class="btn btn-primary" data-es="Descargar CV" data-en="Download CV">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px; margin-right: 8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Descargar CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-es="Habilidades" data-en="Skills">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128"><path fill="#FFD43B" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"/><path fill="#4584B6" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"/></svg>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <p class="skill-desc" data-es="Pandas, NumPy, Scikit-Learn, NLTK, Matplotlib" data-en="Pandas, NumPy, Scikit-Learn, NLTK, Matplotlib">Pandas, NumPy, Scikit-Learn, NLTK, Matplotlib</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--level: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128"><path fill="#00758F" d="M116.948 97.807c-6.863-.187-12.104.452-16.585 2.341-1.273.537-3.305.552-3.513 2.147.7.733.808 1.829 1.365 2.731 1.07 1.73 2.876 4.052 4.488 5.268 1.762 1.33 3.577 2.751 5.465 3.902 3.358 2.047 7.107 3.217 10.34 5.268 1.906 1.21 3.799 2.733 5.658 4.097.92.675 1.537 1.724 2.732 2.147v-.194c-.628-.79-.79-1.874-1.364-2.731l-2.537-2.537c-2.478-3.292-5.629-6.184-8.976-8.585-2.669-1.916-8.642-4.504-9.755-7.609l-.195-.195c1.892-.214 4.107-.898 5.854-1.367 2.934-.786 5.556-.583 8.585-1.365l4.097-1.171v-.78c-1.531-1.571-2.623-3.651-4.292-5.073-4.37-3.72-9.138-7.437-14.048-10.537-2.724-1.718-6.089-2.835-8.976-4.292-.971-.491-2.69-.746-3.318-1.559-1.517-1.907-2.346-4.326-3.512-6.534-2.457-4.651-4.853-9.74-6.925-14.634-1.411-3.333-2.332-6.615-4.097-9.561-8.475-14.142-17.594-22.687-31.716-31.13-3.005-1.795-6.621-2.516-10.438-3.513l-6.146-.39c-1.249-.523-2.55-2.066-3.707-2.732-4.59-2.64-16.367-8.397-19.778-.586-2.156 4.934 3.22 9.75 5.073 12.267 1.299 1.763 2.961 3.739 3.902 5.659.587 1.196.86 2.413 1.365 3.707 1.242 3.182 2.378 6.634 3.902 9.56.771 1.479 1.623 3.044 2.536 4.391.541.8 1.473 1.155 1.56 2.343-1.415 1.98-1.497 5.041-2.341 7.609-3.8 11.577-2.372 25.961 3.122 34.535 1.685 2.631 5.654 8.267 11.023 6.095 4.695-1.9 3.648-7.789 4.976-13.072.301-1.198.125-2.081.78-2.928v.196l4.684 9.363c3.469 5.578 9.628 11.406 14.829 15.225 2.697 1.98 4.83 5.406 8.195 6.535v-.196h-.195c-.679-1.052-1.739-1.492-2.536-2.344-1.875-2.003-3.961-4.496-5.464-6.728-4.234-6.293-7.977-13.195-11.413-20.167-1.64-3.33-3.066-7.007-4.391-10.339-.512-1.287-.5-3.232-1.56-3.903-1.441 2.237-3.567 4.041-4.683 6.728-1.783 4.295-2.012 9.539-2.732 14.829-.398.067-.192.023-.391.196-3.307-.794-4.467-4.234-5.659-7.218-3.013-7.543-3.575-19.699-.976-28.401.672-2.252 3.722-9.345 2.537-11.413-.602-1.969-2.582-3.112-3.707-4.686-1.39-1.943-2.771-4.503-3.707-6.727-2.437-5.793-3.573-12.28-6.146-18.21-.871-2.008-2.35-4.037-3.512-5.854-1.289-2.018-2.73-3.512-3.708-5.854-.346-.829-.803-2.155-.39-3.122.126-.297.446-.472.78-.586 0-.001.571-.53 1.755-.39l2.927.585c2.052.545 3.793 1.185 5.463 2.147.8.46 1.607 1.365 2.536 1.561h1.171c1.836.421 3.893.129 5.659.585 3.131.81 5.937 2.054 8.585 3.512 8.066 4.442 14.65 10.77 19.192 19.388.735 1.391 1.049 2.709 1.754 4.194 1.426 3.001 3.213 6.099 4.587 9.027 1.374 2.927 2.718 5.875 4.683 8.195 1.033 1.22 5.018 1.874 6.826 2.538 1.266.465 3.323.949 4.487 1.56 2.211 1.159 4.358 2.536 6.34 3.903 1.003.69 4.118 2.199 4.293 3.513z"/></svg>
+                    </div>
+                    <h3 class="skill-name">SQL</h3>
+                    <p class="skill-desc" data-es="Consultas, Joins, Subconsultas, Optimización" data-en="Queries, Joins, Subqueries, Optimization">Consultas, Joins, Subconsultas, Optimización</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--level: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128"><path fill="#fff" d="M64.5 0C29.4 0 .6 28.8.6 64s28.8 64 63.9 64 63.9-28.8 63.9-64S99.5 0 64.5 0zm0 119.6c-30.7 0-55.6-24.9-55.6-55.6S33.8 8.4 64.5 8.4s55.6 24.9 55.6 55.6-24.9 55.6-55.6 55.6zm0-99.2c-24.1 0-43.6 19.5-43.6 43.6S40.4 107.6 64.5 107.6s43.6-19.5 43.6-43.6S88.6 20.4 64.5 20.4z"/></svg>
+                    </div>
+                    <h3 class="skill-name">Linux</h3>
+                    <p class="skill-desc" data-es="Terminal, Bash, Automatización, Servidores" data-en="Terminal, Bash, Automation, Servers">Terminal, Bash, Automatización, Servidores</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--level: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128"><path fill="#4285F4" d="M80.6 40.3h.4l-.2-.2 14-14v-.3c-11.8-10.4-28.1-14-43.2-9.5C36.5 20.8 24.9 32.8 20.7 48c.2-.1.5-.2.8-.2 5.2-3.4 11.4-5.4 17.9-5.4 2.2 0 4.3.2 6.4.6.1-.1.2-.1.3-.2 9-7.2 22.4-9.1 33.5-4.5h1z"/><path fill="#EA4335" d="M108.1 47.8c-2.3-8.5-7.1-16.2-13.8-22.1l-14 14c6.1 4.9 9.5 12.3 9.3 20.1v2.5c6.9 0 12.4 5.6 12.4 12.4 0 6.9-5.6 12.4-12.4 12.4H64.1l-2.5 2.5v15h2.5l25.5.1c14.6.1 27.5-9.3 31.8-23.1 4.3-13.8-1-28.8-13.3-36.8z"/><path fill="#FBBC05" d="M39.6 110h25v-15H39.6c-1.8 0-3.5-.4-5.1-1.1l-3.4 3.4-9.8 9.8-.9.9c5.3 4.7 12.2 7.5 19.2 7.5v-5.5z"/><path fill="#34A853" d="M39.6 40.6c-14.5.1-27.2 9.7-31.3 23.6s2.1 29.1 15.2 37l14-14c-5.3-2.4-8.8-7.7-8.8-13.7 0-8.2 6.6-14.8 14.8-14.8 6 0 11.3 3.5 13.7 8.8l14-14c-7.6-12.6-21.5-20.2-36.6-19.9h-1z"/></svg>
+                    </div>
+                    <h3 class="skill-name">Google Cloud</h3>
+                    <p class="skill-desc learning" data-es="BigQuery (Aprendiendo)" data-en="BigQuery (Learning)">BigQuery (Aprendiendo)</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--level: 40%"></div>
+                    </div>
+                    <span class="skill-badge" data-es="En progreso" data-en="In progress">En progreso</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128"><path fill="#F7931E" d="M97.953 56.028c1.271 7.527-.754 15.053-5.514 20.69-4.76 5.638-11.909 8.881-19.615 8.881H29.453c-1.1 0-2.139.863-2.316 1.924l-3.089 19.604-.876 5.562c-.177 1.06.534 2.035 1.584 2.035h13.926c1.1 0 2.139-.863 2.316-1.924l.095-.604 1.832-11.61.118-.641c.177-1.061 1.216-1.924 2.316-1.924h1.459c9.436 0 16.823-3.831 18.981-14.915.9-4.631.435-8.497-1.949-11.212-.723-.823-1.627-1.509-2.686-2.082.81-.235 1.574-.501 2.287-.809 2.13-.918 3.877-2.085 5.268-3.512 1.851-1.901 3.09-4.313 3.693-7.2.193-.924.327-1.883.406-2.869h.001c.008-.098.014-.195.02-.293.015-.243.024-.486.024-.729.004-3.186-1.061-5.738-2.877-7.713-.007-.008-.016-.015-.023-.023-.221-.24-.454-.473-.698-.698-.244-.224-.5-.439-.766-.645.377-.074.749-.149 1.115-.219l.001-.002c.975-.19 1.926-.346 2.849-.469 3.59-.476 6.837-.575 9.598-.401 7.648.482 12.949 3.328 15.309 8.513l.002.004c.371.815.653 1.695.839 2.643.185.945.275 1.953.268 3.026z"/><path fill="#F7931E" d="M89.271 33.108c-1.851-1.901-4.355-3.29-7.41-4.246-2.324-.727-5.029-1.151-8.066-1.321-3.283-.184-6.934-.078-10.907.373-1.131.129-2.286.284-3.461.469-.368.058-.739.12-1.112.186-.373.066-.749.136-1.127.212l-.003.001c-.973.194-1.962.416-2.966.67l.002.013c-1.004.254-2.024.539-3.059.862-.344.107-.69.218-1.037.333-.347.115-.696.234-1.047.359l-.012.004-.002-.007c-2.104.748-4.279 1.629-6.498 2.674l.009-.004c-4.661 2.194-7.599 6.634-8.364 11.655l-.001.005-7.206 45.697c-.178 1.06.534 2.035 1.584 2.035h16.054l4.041-25.607 2.536-16.08c.177-1.061 1.216-1.924 2.316-1.924h4.838c9.436 0 16.823-3.831 18.981-14.915.09-.463.168-.912.234-1.348.066-.437.121-.861.164-1.273.173-1.652.115-3.171-.199-4.545-.063-.277-.137-.549-.221-.816-.084-.267-.179-.528-.284-.784-.105-.255-.22-.506-.346-.75-.125-.244-.261-.481-.407-.713-.146-.231-.302-.457-.469-.676-.167-.219-.344-.432-.531-.639-.007-.007-.015-.014-.022-.021z"/><path fill="#253B80" d="M53.397 51.108c.177-1.061 1.216-1.924 2.316-1.924h4.838c9.436 0 16.823-3.831 18.981-14.915.09-.463.168-.912.234-1.348.066-.437.121-.861.164-1.273.02-.191.035-.378.046-.563-3.142-1.665-6.918-2.577-11.137-2.823-3.283-.184-6.934-.078-10.907.373-1.131.129-2.286.284-3.461.469-.368.058-.739.12-1.112.186-.373.066-.749.136-1.127.212l-.003.001c-.973.194-1.962.416-2.966.67l.002.013c-1.004.254-2.024.539-3.059.862-.344.107-.69.218-1.037.333-.347.115-.696.234-1.047.359l-.012.004-.002-.007c-2.104.748-4.279 1.629-6.498 2.674l.009-.004c-4.661 2.194-7.599 6.634-8.364 11.655l-.001.005-7.206 45.697c-.178 1.06.534 2.035 1.584 2.035h16.054l4.041-25.607 9.666-17.083z"/></svg>
+                    </div>
+                    <h3 class="skill-name">Machine Learning</h3>
+                    <p class="skill-desc" data-es="Clasificación, Regresión, NLP, Evaluación" data-en="Classification, Regression, NLP, Evaluation">Clasificación, Regresión, NLP, Evaluación</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--level: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128"><path fill="#61DAFB" d="M64 36.2c-15.4 0-28 12.6-28 28s12.6 28 28 28 28-12.6 28-28-12.6-28-28-28zm0 44.8c-9.3 0-16.8-7.5-16.8-16.8S54.7 47.4 64 47.4s16.8 7.5 16.8 16.8S73.3 81 64 81z"/></svg>
+                    </div>
+                    <h3 class="skill-name" data-es="Visualización" data-en="Visualization">Visualización</h3>
+                    <p class="skill-desc" data-es="Matplotlib, Seaborn, Plotly" data-en="Matplotlib, Seaborn, Plotly">Matplotlib, Seaborn, Plotly</p>
+                    <div class="skill-level">
+                        <div class="skill-bar" style="--level: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-es="Proyectos" data-en="Projects">Proyectos</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1: SPAM Detection -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">🔍</span>
+                        <div class="project-links">
+                            <a href="https://github.com/ArielOGc1/Deteccion-de-SPAM-con-Machine-Learning" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver en GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title" data-es="Detección de SPAM con ML" data-en="SPAM Detection with ML">Detección de SPAM con ML</h3>
+                    <p class="project-description" data-es="Clasificador de correo electrónico usando NLP y Regresión Logística. Procesamiento de 75,419 emails del dataset TREC 2007 con 98% de accuracy." data-en="Email classifier using NLP and Logistic Regression. Processing of 75,419 emails from the TREC 2007 dataset with 98% accuracy.">
+                        Clasificador de correo electrónico usando NLP y Regresión Logística. Procesamiento de 75,419 emails del dataset TREC 2007 con 98% de accuracy.
+                    </p>
+                    <div class="project-stats">
+                        <span class="stat accuracy">98% Accuracy</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">NLTK</span>
+                        <span class="tag">Scikit-Learn</span>
+                    </div>
+                </article>
+
+                <!-- Project 2: Credit Scoring - Coming Soon -->
+                <article class="project-card coming-soon">
+                    <div class="coming-soon-badge" data-es="Próximamente" data-en="Coming Soon">Próximamente</div>
+                    <div class="project-header">
+                        <span class="project-icon">💳</span>
+                    </div>
+                    <h3 class="project-title">Credit Scoring Pipeline</h3>
+                    <p class="project-description" data-es="Pipeline automatizado para predicción de riesgo crediticio. Incluirá una interfaz para procesar datasets y entregar resultados de scoring de forma automatizada. Próximamente disponible." data-en="Automated pipeline for credit risk prediction. Will include an interface to process datasets and deliver scoring results automatically. Coming soon.">
+                        Pipeline automatizado para predicción de riesgo crediticio. Incluirá una interfaz para procesar datasets y entregar resultados de scoring de forma automatizada. Próximamente disponible.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Pipeline</span>
+                        <span class="tag">Fintech</span>
+                    </div>
+                </article>
+
+                <!-- Project 3: User Classification -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">👥</span>
+                        <div class="project-links">
+                            <a href="https://github.com/ArielOGc1/prediccion_planes" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver en GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title" data-es="Clasificación de Usuarios" data-en="User Classification">Clasificación de Usuarios</h3>
+                    <p class="project-description" data-es="Modelo de clasificación para predecir el plan de suscripción de usuarios (Ultra vs Básico) usando Random Forest. Análisis de patrones de comportamiento." data-en="Classification model to predict user subscription plan (Ultra vs Basic) using Random Forest. Behavior pattern analysis.">
+                        Modelo de clasificación para predecir el plan de suscripción de usuarios (Ultra vs Básico) usando Random Forest. Análisis de patrones de comportamiento.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Random Forest</span>
+                        <span class="tag">EDA</span>
+                        <span class="tag">Scikit-Learn</span>
+                    </div>
+                </article>
+
+                <!-- Project 4: Oil Wells Prediction -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">🛢️</span>
+                        <div class="project-links">
+                            <a href="https://github.com/ArielOGc1/prediccion_pozos" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver en GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title" data-es="Predicción de Pozos Petroleros" data-en="Oil Wells Prediction">Predicción de Pozos Petroleros</h3>
+                    <p class="project-description" data-es="Análisis predictivo para identificar las regiones más rentables para la extracción de petróleo. Aplicación de modelos de regresión y análisis de riesgo." data-en="Predictive analysis to identify the most profitable regions for oil extraction. Application of regression models and risk analysis.">
+                        Análisis predictivo para identificar las regiones más rentables para la extracción de petróleo. Aplicación de modelos de regresión y análisis de riesgo.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Regresión</span>
+                        <span class="tag">Bootstrapping</span>
+                        <span class="tag">Análisis de Riesgo</span>
+                    </div>
+                </article>
+
+            </div>
+            <div class="projects-cta">
+                <a href="https://github.com/ArielOGc1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-es="Ver más proyectos en GitHub" data-en="View more projects on GitHub">
+                    Ver más proyectos en GitHub →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-es="Contacto" data-en="Contact">Contacto</h2>
+            <p class="contact-subtitle" data-es="¿Interesado en colaborar? ¡Hablemos!" data-en="Interested in collaborating? Let's talk!">¿Interesado en colaborar? ¡Hablemos!</p>
+            
+            <div class="contact-cards">
+                <a href="mailto:arielguerron@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>arielguerron@gmail.com</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ariel-ortega-guerron" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p data-es="Conectemos" data-en="Let's connect">Conectemos</p>
+                </a>
+
+                <a href="https://github.com/ArielOGc1" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p data-es="Mis proyectos" data-en="My projects">Mis proyectos</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-es="Diseñado y desarrollado con 💙" data-en="Designed and developed with 💙">Diseñado y desarrollado con 💙</p>
+            <p>© 2026 Ariel Ortega</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
