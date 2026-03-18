@@ -84,6 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
+        // Update CV download buttons
+        document.querySelectorAll('.cv-download').forEach(btn => {
+            btn.style.display = btn.getAttribute('data-lang') === lang ? 'inline-flex' : 'none';
+        });
+        
         // Update HTML lang attribute
         document.documentElement.lang = lang;
         
