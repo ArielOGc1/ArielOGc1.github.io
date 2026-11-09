@@ -902,6 +902,116 @@ img {
     }
 }
 
+/* Featured badge (project cards) */
+.featured-badge {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--bg-primary);
+    background: var(--accent-gradient);
+    border-radius: 20px;
+}
+
+.project-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Keep nav links clear of the fixed ES/EN toggle */
+@media (min-width: 769px) {
+    .nav-container {
+        padding-right: 130px;
+    }
+
+    .nav-menu {
+        gap: 28px;
+    }
+}
+
+/* Experience & Education Section */
+.experience {
+    padding: var(--section-padding);
+    background: var(--bg-primary);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px;
+}
+
+.timeline-heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: var(--accent-primary);
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 28px 24px;
+    border-left: 2px solid var(--border-color);
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent-gradient);
+}
+
+.timeline-date {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.timeline-role {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.timeline-org {
+    font-size: 14px;
+    color: var(--accent-primary);
+    margin-bottom: 8px;
+}
+
+.timeline-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .projects-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
 /* Animation classes for scroll reveal */
 .reveal {
     opacity: 0;
